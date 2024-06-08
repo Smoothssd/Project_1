@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Home</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+
+	<!-- //for-mobile-apps -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen"> -->
+	<link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+
+<body>
+	<!-- header -->
+	<div class="banner-top">
+		<div class="social-bnr-agileits">
+			<ul class="social-icons3">
+				<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+				<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
+				<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li>
+
+			</ul>
+		</div>
+		<div class="contact-bnr-w3-agile">
+			<ul>
+				<li><i class="fa fa-envelope" aria-hidden="true"></i><a
+						href="mailto:info@example.com">INFO@EXAMPLE.COM</a></li>
+				<li><i class="fa fa-phone" aria-hidden="true"></i>+1 (100)222-XX-33</li>
+				<li class="s-bar">
+					<div class="search">
+						<input class="search_box" type="checkbox" id="search_box">
+						<label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search"
+								aria-hidden="true"></span></label>
+						<div class="search_form">
+							<form action="#" method="post">
+								<input type="search" name="Search" placeholder=" " required=" " />
+								<input type="submit" value="Search">
+							</form>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="w3_navigation">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<h1><a class="navbar-brand" href="index.html">Resort <span>Inn</span>
+							<p class="logo_w3l_agile_caption">Your Dreamy Resort</p>
+						</a></h1>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--iris">
+						<ul class="nav navbar-nav menu__list">
+							<li class="menu__item "><a href="index.html" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item"><a href="#about" class="menu__link scroll">About</a></li>
+							<li class="menu__item"><a href="#team" class="menu__link scroll">Team</a></li>
+							<li class="menu__item"><a href="#gallery" class="menu__link scroll">Gallery</a></li>
+							<li class="menu__item"><a href="#rooms" class="menu__link scroll">Rooms</a></li>
+							<li class="menu__item"><a href="#contact" class="menu__link scroll">Contact Us</a></li>
+							<li class="menu__item order-li"><a href="JavaScript:;" class="menu__link ">order</a>
+								<div class="order_box" id="order_box">
+									<button type="button" class="close" id="close-order_box"
+										data-dismiss="modal">&times;</button>
+									<h3 class="form_title"> Hotel orders</h3>
+									<ul id="order_list">
+										<li>
+											<img src="images/r1.jpg" alt="">
+											<div class="order-list">
+												<h3>Deluxe Room123123213123213123</h3>
+												<p>2024-02-11-2024-02-14</p>
+												<div class="price-list">$1333</div>
+												<div class="price-more"><button data-toggle="modal"
+														data-target="#myModal2">more</button></div>
+											</div>
+										</li>
+
+
+
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</nav>
+
+		</div>
+	</div>
+
+	<!-- //header -->
+	<!-- banner -->
+	<div id="home" class="w3ls-banner">
+		<div id="alert-mo">
+			<div class="alert alert-success " role="alert">
+				<button type="button" class="close" id="alert-close"><span aria-hidden="true">&times;</span></button>
+				<p class="alert-mo-text">Congratulations! Booking successful, wish you a pleasant stay!</p>
+			</div>
+		</div>
+		<div class="vbf" id="vbf">
+			<button type="button" class="close" id="close-vbf" data-dismiss="modal">&times;</button>
+			<h2 class="form_title"><i class="fa fa-calendar"></i> BOOK ONLINE</h2>
+			<form id="booking-form" class="inner">
+				<div class="form-group">
+					<input id="Name-mo" class="form-control" name="booking-name" placeholder="Enter Your Name"
+						type="text">
+				</div>
+				<div class="form-group">
+					<input id="Address-mo" class="form-control" name="booking-email"
+						placeholder="Enter Your Email Address" type="email" required>
+				</div>
+				<div class="form-group">
+					<input id="Phone-mo" class="form-control" name="booking-phone" placeholder="Enter Your Phone Number"
+						type="text">
+				</div>
+				<div class="form-group">
+					<div class="form_select">
+						<select name="booking-roomtype" class="form-control" title="Select Room Type"
+							data-header="Room Type" id="booking-Room">
+							<option value="0" disabled selected hidden>Select a Room</option>
+							<option value='1'>Luxury Room</option>
+							<option value='2'>Deluxe Room</option>
+							<option value='3'>Single Room</option>
+							<option value='4'>Double Room</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form_select">
+						<select name="booking-roomtype" class="form-control" title="Select Room Type"
+							data-header="Room Type" id="booking-days">
+							<option value="0" disabled selected hidden>Please select</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form_select">
+						<select name="booking-roomtype" class="form-control" title="Select Room Type"
+							data-header="Room Type" id="booking-people">
+							<option value="0" disabled selected hidden>Please select</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<textarea id="textarea-mo" class="form-control" rows="4"
+						placeholder="Please describe your requirements"></textarea>
+				</div>
+				<button class="button button-BOOK" id="button-BOOK" type="submit">BOOK A ROOM NOW</button>
+				<div class="a_center mt10">
+					<a href="JavaScript:;" class="a_b_f">Advanced Booking Form</a>
+				</div>
+			</form>
+		</div>
+		<!-- banner-text -->
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides callbacks callbacks1" id="slider4">
+					<li>
+						<div class="w3layouts-banner-top">
+
+							<div class="container">
+								<div class="agileits-banner-info">
+									<h4>Star Hotel</h4>
+									<h3>We know what you love</h3>
+									<p>Welcome to our hotels</p>
+									<div class="agileits_w3layouts_more menu__item">
+										<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn
+											More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top1">
+							<div class="container">
+								<div class="agileits-banner-info">
+									<h4>Star Hotel</h4>
+									<h3>Stay with friends & families</h3>
+									<p>Come & enjoy precious moment with us</p>
+									<div class="agileits_w3layouts_more menu__item">
+										<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn
+											More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top2">
+							<div class="container">
+								<div class="agileits-banner-info">
+									<h4>Star Hotel</h4>
+									<h3>want luxurious vacation?</h3>
+									<p>Get accommodation today</p>
+									<div class="agileits_w3layouts_more menu__item">
+										<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn
+											More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+			<!--banner Slider starts Here-->
+		</div>
+		<div class="thim-click-to-bottom">
+			<a href="#about" class="scroll">
+				<i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
+	<!-- //banner -->
+	<!--//Header-->
+	<!-- //Modal1 -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+		<!-- Modal1 -->
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4>Resort <span>Inn</span></h4>
+					<img src="images/1.jpg" alt=" " class="img-responsive">
+					<h5>We know what you love</h5>
+					<p>Providing guests unique and enchanting views from their rooms with its exceptional amenities,
+						makes Star Hotel one of bests in its kind.Try our food menu, awesome services and friendly staff
+						while you are here.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal1 -->
+	<div id="availability-agileits">
+		<div class="col-md-3 book-form-left-w3layouts">
+			<h2>CHECK AVAILABILITY</h2>
+		</div>
+		<div class="col-md-9 book-form">
+			<form action="#" method="post">
+				<div class="fields-w3ls form-left-agileits-w3layouts ">
+					<p>Room Type</p>
+					<select class="form-control" id="form-Room">
+						<option value="0" disabled selected hidden>Select a Room</option>
+						<option value='1'>Luxury Room</option>
+						<option value='2'>Deluxe Room</option>
+						<option value='3'>Single Room</option>
+						<option value='4'>Double Room</option>
+					</select>
+				</div>
+				<div class="fields-w3ls form-date-w3-agileits">
+					<p>Days</p>
+					<select class="form-control" id="form-days">
+						<option value="0" disabled selected hidden>Please select</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
+				</div>
+				<div class="fields-w3ls form-date-w3-agileits">
+					<p>Number of people</p>
+					<select class="form-control" id="form-people">
+						<option value="0" disabled selected hidden>Please select</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
+				</div>
+
+				<div class=" form-left-agileits-submit">
+					<input type="submit" value="Check Availability" id="Check_Availability">
+				</div>
+			</form>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<div class="container">
+			<div class="agileits_banner_bottom">
+				<h3><span>Experience a good stay, enjoy fantastic offers</span> Find our friendly welcoming reception
+				</h3>
+			</div>
+			<div class="w3ls_banner_bottom_grids">
+				<ul class="cbp-ig-grid">
+					<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_road"></span>
+							<h4 class="cbp-ig-title">MASTER BEDROOMS</h4>
+							<span class="cbp-ig-category">Resort Inn</span>
+						</div>
+					</li>
+					<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_cube"></span>
+							<h4 class="cbp-ig-title">SEA VIEW BALCONY</h4>
+							<span class="cbp-ig-category">Resort Inn</span>
+						</div>
+					</li>
+					<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_users"></span>
+							<h4 class="cbp-ig-title">LARGE CAFE</h4>
+							<span class="cbp-ig-category">Resort Inn</span>
+						</div>
+					</li>
+					<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_ticket"></span>
+							<h4 class="cbp-ig-title">WIFI COVERAGE</h4>
+							<span class="cbp-ig-category">Resort Inn</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //banner-bottom -->
+	<!-- /about -->
+	<div class="about-wthree" id="about">
+		<div class="container">
+			<div class="ab-w3l-spa">
+				<h3 class="title-w3-agileits title-black-wthree">About Our Resort Inn</h3>
+				<p class="about-para-w3ls">Welcome to the Elite Hotel! Nestled in the heart of the city, our hotel
+					offers guests a unique blend of elegance and
+					comfort. With luxurious guest rooms equipped with modern amenities, we ensure a pleasant stay for
+					every visitor. Our
+					on-site restaurant serves a variety of international cuisine, while the bar is the perfect place to
+					unwind after a busy
+					day. The hotel also boasts a fitness center, outdoor pool, and a well-equipped business center to
+					cater to the needs of
+					our guests. The Elite Hotel strives to provide exceptional service and create memorable experiences
+					for every guest.
+					Come and enjoy the elite experience at our hotel!</p>
+				<img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
+				<div class="w3l-slider-img">
+					<img src="images/a1.jpg" class="img-responsive" alt="Hair Salon">
+				</div>
+				<div class="w3ls-info-about">
+					<h4>You'll love all the amenities we offer!</h4>
+
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //about -->
+	<!--sevices-->
+	<div class="advantages">
+		<div class="container">
+			<div class="advantages-main">
+				<h3 class="title-w3-agileits">Our Services</h3>
+				<div class="advantage-bottom">
+					<div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" data-wow-delay="0.3s">
+						<div class="advantage-block ">
+							<i class="fa fa-credit-card" aria-hidden="true"></i>
+							<h4>Stay First, Pay After! </h4>
+							<p>The hotel boasts luxurious accommodations, a variety of dining options, and a range of
+								facilities for guests to enjoy.
+								Its central location offers easy access to the city's attractions, while the friendly
+								and attentive staff ensure a
+								comfortable and enjoyable stay.</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i>Decorated room, proper air conditioned</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i>Private balcony</p>
+
+						</div>
+					</div>
+					<div class="col-md-6 advantage-grid right-w3ls wow zoomIn" data-wow-delay="0.3s">
+						<div class="advantage-block">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+							<h4>24 Hour Restaurant</h4>
+							<p>The hotel boasts luxurious accommodations, a variety of dining options, and a range of
+								facilities for guests to enjoy.
+								Its central location offers easy access to the city's attractions, while the friendly
+								and attentive staff ensure a
+								comfortable and enjoyable stay.</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i>24 hours room service</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i>24-hour Concierge service</p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//sevices-->
+	<!-- team -->
+	<div class="team" id="team">
+		<div class="container">
+			<h3 class="title-w3-agileits title-black-wthree">Meet Our Team</h3>
+			<div id="horizontalTab">
+				<ul class="resp-tabs-list">
+					<li>
+						<img src="images/teams1.jpg" alt=" " class="img-responsive" />
+					</li>
+					<li>
+						<img src="images/teams2.jpg" alt=" " class="img-responsive" />
+					</li>
+					<li>
+						<img src="images/teams3.jpg" alt=" " class="img-responsive" />
+					</li>
+					<li>
+						<img src="images/teams4.jpg" alt=" " class="img-responsive" />
+					</li>
+				</ul>
+				<div class="resp-tabs-container">
+					<div class="tab1">
+						<div class="col-md-6 team-img-w3-agile">
+						</div>
+						<div class="col-md-6 team-Info-agileits">
+							<h4>Lucas Jimenez</h4>
+							<span>Manager</span>
+							<p>"Meet our esteemed Hotel Manager, Mr. Lucas Jimenez. With years of experience in the
+								hospitality industry, he leads our
+								team with dedication and expertise. His passion for excellence and commitment to guest
+								satisfaction ensure that every
+								stay at our hotel is truly memorable."</p>
+							<div class="social-bnr-agileits footer-icons-agileinfo">
+								<ul class="social-icons3">
+									<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+									<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
+									<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="tab2">
+						<div class="col-md-6 team-img-w3-agile">
+						</div>
+						<div class="col-md-6 team-Info-agileits">
+							<h4>Sarah Connor</h4>
+							<span>Receptionist</span>
+							<p>"Welcome to our hotel! Let us introduce you to our friendly and professional
+								Receptionist, Ms. Sarah Connor.
+								She is here to greet you with a warm smile and ensure your stay is smooth and enjoyable.
+								Whether you need assistance
+								with check-in, directions, or any other information, Ms. Sarah Connor is always ready to
+								help."</p>
+							<div class="social-bnr-agileits footer-icons-agileinfo">
+								<ul class="social-icons3">
+									<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+									<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
+									<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="tab3">
+						<div class="col-md-6 team-img-w3-agile">
+						</div>
+						<div class="col-md-6 team-Info-agileits">
+							<h4>Ivan Simpson</h4>
+							<span>Manager</span>
+							<p>"Introducing our Hotel Manager, Mr. Ivan Simpson. Under his guidance, our hotel has
+								achieved remarkable service
+								standards. With his vast experience and dedication to excellence, Mr. [Manager's Name]
+								ensures that every guest enjoys a
+								memorable stay."</p>
+							<div class="social-bnr-agileits footer-icons-agileinfo">
+								<ul class="social-icons3">
+									<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+									<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
+									<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="tab4">
+						<div class="col-md-6 team-img-w3-agile">
+						</div>
+						<div class="col-md-6 team-Info-agileits">
+							<h4>Marc Gutierrez</h4>
+							<span>chef</span>
+							<p>"Chef Marc Gutierrez is our culinary mastermind, blending traditional flavors with
+								innovative techniques to create dishes
+								that are both delicious and visually stunning. His passion for food and commitment to
+								using fresh, quality ingredients
+								ensures that every meal at our hotel is a gourmet experience."</p>
+							<div class="social-bnr-agileits footer-icons-agileinfo">
+								<ul class="social-icons3">
+									<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+									<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
+									<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //team -->
+	<!-- Gallery -->
+	<section class="portfolio-w3ls" id="gallery">
+		<h3 class="title-w3-agileits title-black-wthree">Our Gallery</h3>
+		<div class="col-md-3 gallery-grid gallery1">
+			<a href="images/g1.jpg" class="swipebox"><img src="images/g1.jpg" class="img-responsive" alt="/">
+				<div class="textbox">
+					<h4>Resort Inn</h4>
+					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3 gallery-grid gallery1">
+			<a href="images/g2.jpg" class="swipebox"><img src="images/g2.jpg" class="img-responsive" alt="/">
+				<div class="textbox">
+					<h4>Resort Inn</h4>
+					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3 gallery-grid gallery1">
+			<a href="images/g3.jpg" class="swipebox"><img src="images/g3.jpg" class="img-responsive" alt="/">
+				<div class="textbox">
+					<h4>Resort Inn</h4>
+					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3 gallery-grid gallery1">
+			<a href="images/g4.jpg" class="swipebox"><img src="images/g4.jpg" class="img-responsive" alt="/">
+				<div class="textbox">
+					<h4>Resort Inn</h4>
+					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3 gallery-grid gallery1">
+			<a href="images/g5.jpg" class="swipebox"><img src="images/g5.jpg" class="img-responsive" alt="/">
+				<div class="textbox">
+					<h4>Resort Inn</h4>
+					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3 gallery-grid gallery1">
+			<a href="images/g6.jpg" class="swipebox"><img src="images/g6.jpg" class="img-responsive" alt="/">
+				<div class="textbox">
+					<h4>Resort Inn</h4>
+					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3 gallery-grid gallery1">
+			<a href="images/g6.jpg" class="swipebox"><img src="images/g7.jpg" class="img-responsive" alt="/">
+				<div class="textbox">
+					<h4>Resort Inn</h4>
+					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3 gallery-grid gallery1">
+			<a href="images/g6.jpg" class="swipebox"><img src="images/g8.jpg" class="img-responsive" alt="/">
+				<div class="textbox">
+					<h4>Resort Inn</h4>
+					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3 gallery-grid gallery1">
+			<a href="images/g9.jpg" class="swipebox"><img src="images/g9.jpg" class="img-responsive" alt="/">
+				<div class="textbox">
+					<h4>Resort Inn</h4>
+					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3 gallery-grid gallery1">
+			<a href="images/g10.jpg" class="swipebox"><img src="images/g10.jpg" class="img-responsive" alt="/">
+				<div class="textbox">
+					<h4>Resort Inn</h4>
+					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3 gallery-grid gallery1">
+			<a href="images/g4.jpg" class="swipebox"><img src="images/g4.jpg" class="img-responsive" alt="/">
+				<div class="textbox">
+					<h4>Resort Inn</h4>
+					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3 gallery-grid gallery1">
+			<a href="images/g2.jpg" class="swipebox"><img src="images/g2.jpg" class="img-responsive" alt="/">
+				<div class="textbox">
+					<h4>Resort Inn</h4>
+					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
+				</div>
+			</a>
+		</div>
+		<div class="clearfix"> </div>
+	</section>
+	<!-- //gallery -->
+	<!-- rooms & rates -->
+	<div class="plans-section" id="rooms">
+		<div class="container">
+			<h3 class="title-w3-agileits title-black-wthree">Rooms And Rates</h3>
+			<div class="priceing-table-main">
+				<div class="col-md-3 price-grid">
+					<div class="price-block agile">
+						<div class="price-gd-top">
+							<img src="images/r1.jpg" alt=" " class="img-responsive" />
+							<h4>Deluxe Room</h4>
+						</div>
+						<div class="price-gd-bottom">
+							<div class="price-list">
+								<ul>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+
+								</ul>
+							</div>
+							<div class="price-selet">
+								<h3><span>$</span>320</h3>
+								<a href="#availability-agileits" class="scroll">Book Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 price-grid ">
+					<div class="price-block agile">
+						<div class="price-gd-top">
+							<img src="images/r2.jpg" alt=" " class="img-responsive" />
+							<h4>Luxury Room</h4>
+						</div>
+						<div class="price-gd-bottom">
+							<div class="price-list">
+								<ul>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+								</ul>
+							</div>
+							<div class="price-selet">
+								<h3><span>$</span>220</h3>
+								<a href="#availability-agileits" class="scroll">Book Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 price-grid lost">
+					<div class="price-block agile">
+						<div class="price-gd-top">
+							<img src="images/r3.jpg" alt=" " class="img-responsive" />
+							<h4>Guest House</h4>
+						</div>
+						<div class="price-gd-bottom">
+							<div class="price-list">
+								<ul>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+								</ul>
+							</div>
+							<div class="price-selet">
+								<h3><span>$</span>180</h3>
+								<a href="#availability-agileits" class="scroll">Book Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 price-grid wthree lost">
+					<div class="price-block agile">
+						<div class="price-gd-top ">
+							<img src="images/r4.jpg" alt=" " class="img-responsive" />
+							<h4>Single Room</h4>
+						</div>
+						<div class="price-gd-bottom">
+							<div class="price-list">
+								<ul>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+								</ul>
+							</div>
+							<div class="price-selet">
+								<h3><span>$</span> 150</h3>
+								<a href="#availability-agileits" class="scroll">Book Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--// rooms & rates -->
+	<!-- visitors -->
+	<div class="w3l-visitors-agile">
+		<div class="container">
+			<h3 class="title-w3-agileits title-black-wthree">What other visitors experienced</h3>
+		</div>
+		<div class="w3layouts_work_grids">
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="w3layouts_work_grid_left">
+								<img src="images/5.jpg" alt=" " class="img-responsive" />
+								<div class="w3layouts_work_grid_left_pos">
+									<img src="images/c1.jpg" alt=" " class="img-responsive" />
+								</div>
+							</div>
+							<div class="w3layouts_work_grid_right">
+								<h4>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									Worth to come again
+								</h4>
+								<p>"Staying at this hotel was a delightful experience. The rooms were cozy and
+									well-appointed, providing all the comforts
+									of home." </p>
+								<h5>Julia Rose</h5>
+								<p>Germany</p>
+							</div>
+							<div class="clearfix"> </div>
+						</li>
+						<li>
+							<div class="w3layouts_work_grid_left">
+								<img src="images/5.jpg" alt=" " class="img-responsive" />
+								<div class="w3layouts_work_grid_left_pos">
+									<img src="images/c2.jpg" alt=" " class="img-responsive" />
+								</div>
+							</div>
+							<div class="w3layouts_work_grid_right">
+								<h4>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									Worth to come again
+								</h4>
+								<p>"I enjoyed the stay at this hotel. The staff were friendly and attentive, always
+									ready to assist with any request. It
+									made my trip much more enjoyable." </p>
+								<h5>Jahnatan Smith</h5>
+								<p>United States</p>
+							</div>
+							<div class="clearfix"> </div>
+						</li>
+						<li>
+							<div class="w3layouts_work_grid_left">
+								<img src="images/5.jpg" alt=" " class="img-responsive" />
+								<div class="w3layouts_work_grid_left_pos">
+									<img src="images/c3.jpg" alt=" " class="img-responsive" />
+								</div>
+							</div>
+							<div class="w3layouts_work_grid_right">
+								<h4>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									Worth to come again
+								</h4>
+								<p>"The hotel's amenities were impressive, from the state-of-the-art fitness center to
+									the serene spa. It was a relaxing
+									and rejuvenating stay."</p>
+								<h5>Rosalind Cloer</h5>
+								<p>Italy</p>
+							</div>
+							<div class="clearfix"> </div>
+						</li>
+						<li>
+							<div class="w3layouts_work_grid_left">
+								<img src="images/5.jpg" alt=" " class="img-responsive" />
+								<div class="w3layouts_work_grid_left_pos">
+									<img src="images/c4.jpg" alt=" " class="img-responsive" />
+								</div>
+							</div>
+							<div class="w3layouts_work_grid_right">
+								<h4>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									Worth to come again
+								</h4>
+								<p>"Dining at the hotel's restaurant was a highlight. The chef's creations were not only
+									visually appealing but also tasted
+									amazing, making my stay even more memorable."</p>
+								<h5>Amie Bublitz</h5>
+								<p>Switzerland</p>
+							</div>
+							<div class="clearfix"> </div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<!-- visitors -->
+	<!-- contact -->
+	<section class="contact-w3ls" id="contact">
+		<div class="container">
+			<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile2" data-aos="flip-left">
+				<div class="contact-agileits">
+					<h4>Contact Us</h4>
+					<p class="contact-agile2">Sign Up For Our News Letters</p>
+					<form action="#" method="post" name="sentMessage" id="contactForm" novalidate>
+						<div class="control-group form-group">
+							<div class="controls">
+								<label class="contact-p1">Full Name:</label>
+								<input type="text" class="form-control" name="name" id="name" required
+									data-validation-required-message="Please enter your name.">
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group form-group">
+							<div class="controls">
+								<label class="contact-p1">Phone Number:</label>
+								<input type="tel" class="form-control" name="phone" id="phone" required
+									data-validation-required-message="Please enter your phone number.">
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group form-group">
+							<div class="controls">
+								<label class="contact-p1">Email Address:</label>
+								<input type="email" class="form-control" name="email" id="email" required
+									data-validation-required-message="Please enter your email address.">
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div id="success"></div>
+						<!-- For success/fail messages -->
+						<button type="submit" class="btn btn-primary">Send</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
+				<h4>Connect With Us</h4>
+				<p class="contact-agile1"><strong>Phone :</strong> +1 (100)222-XX-33</p>
+				<p class="contact-agile1"><strong>Email :</strong> <a
+						href="mailto:name@example.com">info@example.com</a></p>
+				<p class="contact-agile1"><strong>Address :</strong> Interstate 81 SB, Williamsport, WV 25419, USA.</p>
+
+				<div class="social-bnr-agileits footer-icons-agileinfo">
+					<ul class="social-icons3">
+						<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+						<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
+						<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li>
+
+					</ul>
+				</div>
+				-<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.7905052320443!2d-77.84987248482734!3d39.586871613613056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c9f6a80ccf0661%3A0x7210426c67abc40!2sVirginia+Welcome+Center%2FSafety+Rest+Area!5e0!3m2!1sen!2sin!4v1485760915662"></iframe>-
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</section>
+	<!-- /contact -->
+	<div class="copy">
+		<p>Copyright &copy; 2024
+		</p>
+	</div>
+	<!--/footer -->
+	<!-- Order-details -->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+		<!-- Modal1 -->
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4>Order details</h4>
+
+					<ul class="list-group">
+						<li class="list-group-item">Name : <span class="Name-det"></span></li>
+						<li class="list-group-item">Phone : <span class="Phone-det"></span></li>
+						<li class="list-group-item">Room type : <span class="Room-type"></span></li>
+						<li class="list-group-item">Booking time :<span class="Booking-time"></span></li>
+						<li class="list-group-item">Days :<span class="Days"></span></li>
+						<li class="list-group-item">One day price :<span class="day-price"></span></li>
+						<li class="list-group-item">Total :<span class="total"></span></li>
+						<li class="list-group-item">Message :<span class="Remarks"></span></li>
+
+					</ul>
+
+
+					<div class="price-more"><button id="refund-modal" data-toggle="modal"
+							data-target="#myModal3">refund</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Order-details -->
+
+	<div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+		<!-- Modal1 -->
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4>Kind reminder</h4>
+					<p>Are you sure you want a refund?
+					</p>
+
+					<div class="choice">
+						<button id="choice-no">No</button>
+						<button id="choice-yes">Yes</button>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="alert alert-danger" id="alert-danger-box" role="alert">
+		Please enter your name!
+	</div>
+	<!-- js -->
+	<script type="application/x-javascript">
+	addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+				function hideURLbar(){ window.scrollTo(0,1); } 
+	</script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- CHECK-AVAILABILITY -->
+	<script>
+		let RoomValue = $('#form-Room')
+		let daysVlue = $('#form-days')
+		let peopleValue = $('#form-people')
+		let closeVbf = $('#close-vbf')
+		let buttonBOOK = $('#button-BOOK')
+		let vbf = $('#vbf')
+		let bookingRoom = $('#booking-Room')
+		let bookingDays = $('#booking-days')
+		let bookingPeople = $('#booking-people')
+		let alertCloser = $('#alert-close')
+		let alertMo = $('#alert-mo')
+		let order_box = $('#order_box')
+		let orderLi = $('.order-li')
+		let closeOrder_box = $('#close-order_box')
+		let choiceNo = $('#choice-no')
+		let choiceYes = $('#choice-yes')
+		let dangerBox = $('#alert-danger-box')
+		let NameMo = $('#Name-mo')
+		let AddressMo = $('#Address-mo')
+		let PhoneMo = $('#Phone-mo')
+		let textareaMo = $('#textarea-mo')
+		let order_list = $('#order_list')
+		let timeOut
+		let timeout2
+		let ImgArr = ['images/r1.jpg', 'images/r2.jpg', 'images/r3.jpg', 'images/r4.jpg']
+		let index = 0
+		let RoomTypeArr = ['Luxury Room', 'Deluxe Room', 'Single Room', 'Double Room']
+		let obj = {
+			name: '',
+			address: '',
+			Phone: '',
+			roomType: '',
+			days: "",
+			people: '',
+			time: '',
+			msg: '',
+			price: '',
+			img: ''
+
+		}
+		let arr = []
+		$('#Check_Availability').on('click', function (event) {
+			event.preventDefault();
+			console.log(RoomValue.val(), daysVlue.val(), peopleValue.val());
+			vbf.show(1000)
+		});
+
+		function setdangerBox(text) {
+			dangerBox.text(text)
+			dangerBox.show()
+			timeOut2 = setTimeout(() => {
+				clearTimeout(timeOut2)
+				dangerBox.hide(1000)
+			}, 1500);
+		}
+		function setTimeType(currentTime) {
+			const year = currentTime.getFullYear();
+			const month = currentTime.getMonth() + 1;
+			const day = currentTime.getDate();
+			const hours = currentTime.getHours();
+			const minutes = currentTime.getMinutes();
+			const seconds = currentTime.getSeconds();
+
+			return year + "-" + month + "-" + day + " " + hours + ":" + minutes + ":" + seconds
+		}
+		choiceYes.click(() => {
+			arr.splice(index, 1)
+			setOrderList()
+		})
+		buttonBOOK.on('click', function (event) {
+			event.preventDefault();
+			const currentTime = new Date();
+			let res = setTimeType(currentTime)
+			const currenDate = currentTime.getTime();
+			const NewTime = currenDate + (bookingDays.val() * 1000 * 24 * 60 * 60)
+			const currentTime2 = new Date(NewTime);
+			let res2 = setTimeType(currentTime2)
+			console.log(res, res2);
+			let priceArr = [320, 220, 180, 150]
+			obj = {
+				id: currenDate,
+				name: NameMo.val(),
+				address: AddressMo.val(),
+				Phone: PhoneMo.val(),
+				roomType: RoomTypeArr[bookingRoom.val() - 1],
+				days: bookingDays.val(),
+				people: bookingPeople.val(),
+				msg: textareaMo.val(),
+				time: res,
+				price: priceArr[bookingRoom.val() - 1],
+				img: ImgArr[bookingRoom.val() - 1],
+				NewTime: res2
+			}
+
+			if (!obj.name) {
+				setdangerBox('Name cannot be empty')
+
+				return
+			}
+			if (!obj.address) {
+				setdangerBox('Email cannot be empty')
+				return
+			}
+			if (!obj.Phone) {
+				setdangerBox('Phone number cannot be empty')
+
+				return
+			}
+			if (!obj.roomType || obj.roomType == null) {
+				setdangerBox('Please select a room')
+
+				return
+			}
+			if (!obj.days || obj.days == null) {
+				setdangerBox('Please select the number of days')
+				return
+			}
+			if (!obj.people || obj.people == null) {
+				setdangerBox('Please select the number of people')
+				return
+			}
+			arr.unshift(obj)
+			console.log(obj);
+			$('.alert-mo-text').text('Congratulations! Booking successful, wish you a pleasant stay!')
+			alertMo.show(1000)
+			vbf.hide(1000)
+			obj = {
+				name: '',
+				address: '',
+				Phone: '',
+				roomType: '',
+				days: "",
+				people: '',
+				time: '',
+				msg: '',
+				price: '',
+				img: ''
+
+			}
+			timeOut = setTimeout(() => {
+				clearTimeout(timeOut)
+
+				alertMo.hide(1000)
+			}, 2500);
+		});
+		alertCloser.click(() => {
+			clearTimeout(timeOut)
+
+			alertMo.hide(1000)
+		})
+		order_list.click(e => {
+			console.log(e.target.dataset);
+			let { type, id } = e.target.dataset
+			index = arr.findIndex(item => { return item.id == id })
+			if (type == 'more') {
+
+				$('.Name-det').text(arr[index].name)
+				$('.Phone-det').text(arr[index].Phone)
+				$('.Room-type').text(arr[index].roomType)
+				$('.Booking-time').text(arr[index].time)
+				$('.Days').text(arr[index].days)
+				$('.day-price').text(arr[index].price)
+				$('.total').text(arr[index].price * arr[index].days)
+				$('.Remarks').text(arr[index].msg)
+			}
+		})
+		closeVbf.click(() => {
+			vbf.hide(1000)
+		})
+		RoomValue.change(() => {
+			let value = RoomValue.val()
+			bookingRoom.val(value)
+		})
+		daysVlue.change(() => {
+			let value = daysVlue.val()
+			bookingDays.val(value)
+		})
+		peopleValue.change(() => {
+			let value = peopleValue.val()
+			bookingPeople.val(value)
+		})
+
+		bookingRoom.change(() => {
+			let value = bookingRoom.val()
+			RoomValue.val(value)
+		})
+		bookingDays.change(() => {
+			let value = bookingDays.val()
+			daysVlue.val(value)
+		})
+		bookingPeople.change(() => {
+			let value = bookingPeople.val()
+			peopleValue.val(value)
+		})
+		orderLi.click(() => {
+			console.log(123);
+
+			setOrderList()
+			order_box.show(500)
+		})
+
+		function setOrderList() {
+			let html = ''
+			if (arr.length == 0) {
+				html = `<p>There are currently no orders available</p>`
+				return order_list.html(html)
+			}
+			for (let i = 0; i < arr.length; i++) {
+				html += `
+				<li>
+											<img src="${arr[i].img}" alt="">
+											<div class="order-list">
+												<h3>${arr[i].roomType}</h3>
+												<p>${arr[i].time} ~ ${arr[i].NewTime}</p>
+												<div class="price-list">$${arr[i].days * arr[i].price}</div>
+												<div class="price-more"><button data-toggle="modal" data-id="${arr[i].id}"
+												data-type='more'		data-target="#myModal2">more</button></div>
+											</div>
+			   </li>
+				`
+
+			}
+			order_list.html(html)
+		}
+
+		closeOrder_box.click((event) => {
+			event.stopPropagation()
+			order_box.hide(500)
+		})
+		$('#refund-modal').click(() => {
+			$('#myModal2').modal('hide')
+		})
+		$('#myModal2').on('shown.bs.modal', function () {
+			order_box.hide(500)
+		})
+		choiceNo.click(() => {
+			console.log(123);
+			$('#myModal3').modal('hide')
+			$('#myModal2').modal('show')
+		})
+		choiceYes.click(() => {
+			console.log(123);
+			$('#myModal3').modal('hide')
+			$('.alert-mo-text').text('Cancel order successful!')
+			alertMo.show(1000)
+
+
+			timeOut = setTimeout(() => {
+				clearTimeout(timeOut)
+				alertMo.hide(1000)
+			}, 2500);
+		})
+	</script>
+	<!-- contact form -->
+	<script src="js/jqBootstrapValidation.js"></script>
+	<script src="js/contact_me.js"></script>
+	<!-- /contact form -->
+	<!-- Calendar -->
+	<script src="js/jquery-ui.js"></script>
+
+	<!-- //Calendar -->
+	<!-- gallery popup -->
+	<link rel="stylesheet" href="css/swipebox.css">
+	<script src="js/jquery.swipebox.min.js"></script>
+	<script type="text/javascript">
+		jQuery(function ($) {
+			$(".swipebox").swipebox();
+		});
+	</script>
+	<!-- //gallery popup -->
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+	<!-- flexSlider -->
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				animation: "slide",
+				start: function (slider) {
+					$('body').removeClass('loading');
+				}
+			});
+		});
+	</script>
+	<!-- //flexSlider -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
+			$("#slider4").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+
+	<!--tabs-->
+	<script src="js/easy-responsive-tabs.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#horizontalTab').easyResponsiveTabs({
+				type: 'default', //Types: default, vertical, accordion           
+				width: 'auto', //auto or any width like 600px
+				fit: true,   // 100% fit in a container
+				closed: 'accordion', // Start closed if in accordion view
+				activate: function (event) { // Callback function if tab is switched
+					var $tab = $(this);
+					var $info = $('#tabInfo');
+					var $name = $('span', $info);
+					$name.text($tab.text());
+					$info.show();
+				}
+			});
+			$('#verticalTab').easyResponsiveTabs({
+				type: 'vertical',
+				width: 'auto',
+				fit: true
+			});
+		});
+	</script>
+	<!--//tabs-->
+	<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+
+	<div class="arr-w3ls">
+		<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	<!-- //smooth scrolling -->
+	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+
+</body>
+
+</html>
